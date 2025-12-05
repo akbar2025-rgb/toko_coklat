@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Toko Coklat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #A0522D 50%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '🍫';
+            position: absolute;
+            font-size: 150px;
+            opacity: 0.1;
+            top: -20px;
+            right: -20px;
+        }
+        .header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .header p { 
+            font-size: 1.1rem; 
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        .content {
+            padding: 40px;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #FFF8DC 0%, #FAEBD7 100%);
+            border-radius: 10px;
+            transition: all 0.3s;
+            border-left: 4px solid #8B4513;
+        }
+        .feature:hover { 
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+        }
+        .feature-text h3 { 
+            color: #8B4513; 
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .feature-text p { 
+            color: #666; 
+            font-size: 0.95rem;
+        }
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            flex: 1;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.4);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+        }
+        .info {
+            background: linear-gradient(135deg, #FFF8DC 0%, #FFEFD5 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #D2691E;
+        }
+        .info h4 { 
+            color: #8B4513; 
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .info code {
+            background: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            color: #8B4513;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            border: 1px solid #D2691E;
+        }
+        @media (max-width: 768px) {
+            .btn-container {
+                flex-direction: column;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍫 Toko Coklat</h1>
+            <p>Sistem Informasi Penjualan Berbasis Web</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">PHP OOP + MySQL + Bootstrap</p>
+        </div>
+        
+        <div class="content">
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <div class="feature-text">
+                    <h3>Manajemen Produk</h3>
+                    <p>Kelola kategori dan produk coklat dengan mudah</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <div class="feature-text">
+                    <h3>Manajemen Pelanggan</h3>
+                    <p>Database pelanggan terintegrasi</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🛒</div>
+                <div class="feature-text">
+                    <h3>Transaksi Penjualan</h3>
+                    <p>Proses transaksi cepat dan akurat dengan keranjang</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div class="feature-text">
+                    <h3>Dashboard & Laporan</h3>
+                    <p>Statistik penjualan real-time dan laporan lengkap</p>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <a href="views/login.php" class="btn">🚀 Masuk ke Sistem</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

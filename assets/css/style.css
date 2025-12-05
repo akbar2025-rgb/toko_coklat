@@ -1,0 +1,322 @@
+/* Custom Styles for Toko Coklat */
+
+:root {
+    --brown-primary: #8B4513;
+    --brown-secondary: #A0522D;
+    --brown-light: #D2691E;
+    --brown-lighter: #CD853F;
+    --cream: #FFF8DC;
+    --cream-dark: #FAEBD7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FFF8DC 0%, #FAEBD7 100%);
+}
+
+/* Navbar Custom */
+.bg-brown {
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.9);
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(139, 69, 19, 0.15);
+}
+
+.shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(139, 69, 19, 0.15) !important;
+}
+
+/* Table Styles */
+.table {
+    font-size: 0.95rem;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%);
+    color: white;
+}
+
+.table-bordered {
+    border: 1px solid #e3e6f0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--cream);
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--brown-secondary) 0%, var(--brown-light) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #13855c 0%, #1cc88a 100%);
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f6c23e 0%, #dda20a 100%);
+    border: none;
+    color: #5a5c69;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #dda20a 0%, #f6c23e 100%);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e74a3b 0%, #be2617 100%);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #be2617 0%, #e74a3b 100%);
+    transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.modal-header {
+    border-bottom: 2px solid #e3e6f0;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+}
+
+.modal-header.bg-primary {
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%) !important;
+    color: white;
+}
+
+.modal-header.bg-warning {
+    background: linear-gradient(135deg, #f6c23e 0%, #dda20a 100%) !important;
+}
+
+.modal-footer {
+    border-top: 2px solid #e3e6f0;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 600;
+    color: #5a5c69;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--brown-primary);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Badge Styles */
+.badge {
+    padding: 0.35rem 0.6rem;
+    font-weight: 500;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    border-left-color: #1cc88a;
+    background-color: #d4edda;
+}
+
+.alert-danger {
+    border-left-color: #e74a3b;
+    background-color: #f8d7da;
+}
+
+.alert-warning {
+    border-left-color: #f6c23e;
+    background-color: #fff3cd;
+}
+
+.alert-info {
+    border-left-color: #36b9cc;
+    background-color: #d1ecf1;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 3px solid var(--brown-primary);
+}
+
+/* Card Header Colors */
+.card-header.bg-primary {
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%) !important;
+}
+
+.card-header.bg-success {
+    background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%) !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(139, 69, 19, 0.15);
+    border-radius: 0.35rem;
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--cream);
+    color: var(--brown-primary);
+}
+
+/* Dashboard Cards */
+.border-left-primary {
+    border-left: 4px solid #4e73df;
+}
+.border-left-success {
+    border-left: 4px solid #1cc88a;
+}
+.border-left-info {
+    border-left: 4px solid #36b9cc;
+}
+.border-left-warning {
+    border-left: 4px solid #f6c23e;
+}
+.border-left-danger {
+    border-left: 4px solid #e74a3b;
+}
+
+/* Keranjang Belanja */
+.cart-item {
+    background: var(--cream);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 3px solid var(--brown-primary);
+}
+
+.cart-total {
+    background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-secondary) 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.85rem;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--brown-primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brown-secondary);
+}
+
+/* Produk Selector */
+.produk-item {
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.produk-item:hover {
+    background: var(--cream);
+    border-color: var(--brown-primary);
+    transform: scale(1.02);
+}
+
+.produk-item.selected {
+    background: var(--cream-dark);
+    border-color: var(--brown-secondary);
+}
