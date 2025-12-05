@@ -261,16 +261,6 @@ Setelah login, Anda akan diarahkan ke dashboard yang menampilkan statistik penju
 - Cek permission folder session di server
 - Restart Apache
 
-## Lisensi
-
-MIT License - Free to use and modify
-
-## Kontak & Support
-
-Untuk pertanyaan dan support:
-- Email: support@tokoclat.com
-- Website: www.tokoclat.com
-
 ## Catatan Penting
 
 1. **Backup Data**: Selalu backup database secara berkala
